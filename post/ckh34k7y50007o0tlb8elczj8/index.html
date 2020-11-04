@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="重学前端笔记(1), 有猫的茶水间">
+    <meta name="keywords" content="重学前端笔记（2）, 有猫的茶水间">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>重学前端笔记(1) | 有猫的茶水间</title>
+    <title>重学前端笔记（2） | 有猫的茶水间</title>
     <link rel="icon" type="image/png" href="/favicon1.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -268,12 +268,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/images/%E9%87%8D%E5%AD%A6%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0-1/head_22.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/images/%E9%87%8D%E5%AD%A6%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0-2/head_22.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">重学前端笔记(1)</h1>
+                    <h1 class="description center-align post-title">重学前端笔记（2）</h1>
                 </div>
             </div>
         </div>
@@ -299,12 +299,12 @@
                                 <span class="chip bg-color">前端</span>
                             </a>
                         
-                            <a href="/tags/%E7%9F%A5%E8%AF%86%E6%9E%B6%E6%9E%84/">
-                                <span class="chip bg-color">知识架构</span>
-                            </a>
-                        
                             <a href="/tags/JavaScript/">
                                 <span class="chip bg-color">JavaScript</span>
+                            </a>
+                        
+                            <a href="/tags/%E7%B1%BB%E5%9E%8B/">
+                                <span class="chip bg-color">类型</span>
                             </a>
                         
                     </div>
@@ -328,7 +328,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-10-10
+                    2020-10-30
                 </div>
                 
 
@@ -344,28 +344,71 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><a target="_blank" rel="noopener" href="https://time.geekbang.org/column/intro/154">《重学前端》</a> 购买了很久，之前也断断续续的看了一些，一直没有很认真的学习。现在终于有时间沉下心来好好看看了。这个系列的笔记和原文对比起来可能有些不一样，因为我会看完一篇，加上自己的理解对整篇文章做一个回顾和总结，所以建议先看完对应的章节再看笔记。</p>
-<h2 id="开篇词-从今天起，重新理解前端"><a href="#开篇词-从今天起，重新理解前端" class="headerlink" title="开篇词 | 从今天起，重新理解前端"></a>开篇词 | 从今天起，重新理解前端</h2><p>本篇首先介绍了前端的发展历史。青铜时期（ajax 出现）→ 白银时期（前端开始有意识的处理数据，保存数据，逐步与后端分离）→ 黄金时代（框架的出现）</p>
-<p>其次介绍了《重学前端》的目的，作者会提供视角帮助读者系统的认识前端知识点，形成自己的知识图谱。将知识从点到面，逐步涵盖理解前端技能点。</p>
-<h2 id="明确你的前端学习路线和方法"><a href="#明确你的前端学习路线和方法" class="headerlink" title="明确你的前端学习路线和方法"></a>明确你的前端学习路线和方法</h2><p>很多人都说前端门槛相当低，但是能一直向上走的人没几个。我个人认为门槛是低，但就是因为低，导致知识点庞大且杂乱。同样的效果通过不同属性都可以达到，但是根本上他们之间还有一定的却别。这让学习成本在不断的增加。前端技术的发展比任何一门语言发展的都快，无论是框架、库还是相关标准，变化之快是你想不到的，这在某种程度上无疑增加了前端工作者的学习成本。</p>
-<p>面对这种「学习」环境，我们能做的就是找到适合自己的学习方法和学习路径。</p>
-<p>winter 在文章中介绍了两种学习方法：<strong>建立知识架构</strong>和<strong>追本溯源</strong></p>
-<h3 id="建立知识架构"><a href="#建立知识架构" class="headerlink" title="建立知识架构"></a>建立知识架构</h3><p>简单说来是就画自己的知识图谱，从父节点一层一层细化自己的子节点。</p>
-<p>前端从大方向来分可以分为：HTML、CSS、JavaScript、浏览器、综合应用</p>
-<p>我们以  JavaScript 为例一层一层细化节点</p>
-<blockquote>
-<p>因为对于任何计算机语言来说，必定是“用规定的文法，去表达特定语义，最终操作运行时的”一个过程</p>
+                <p>今天主要是讲类型，面试中经常会问到判断类型的问题，所以除了文章中讲到的知识点之外可能还会有一些补充吧。</p>
+<ul>
+<li>Undefined</li>
+<li>Null</li>
+<li>Boolean</li>
+<li>String</li>
+<li>Number</li>
+<li>Symbol</li>
+<li>Object</li>
+</ul>
+<h2 id="Undefined-amp-Null"><a href="#Undefined-amp-Null" class="headerlink" title="Undefined &amp; Null"></a>Undefined &amp; Null</h2><blockquote>
+<p>为什么有的编程规范要求用 void 0 代替 undefined？</p>
 </blockquote>
-<p><img src="/images/%E9%87%8D%E5%AD%A6%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0-1/156d0524.png" alt="JavaScript 顶层分类"></p>
-<h3 id="追本溯源"><a href="#追本溯源" class="headerlink" title="追本溯源"></a>追本溯源</h3><p>简单说就是「翻旧账」，去看论文、去看标准。虽然我觉得标准不是给人看的。</p>
-<h2 id="列一份前端知识架构图"><a href="#列一份前端知识架构图" class="headerlink" title="列一份前端知识架构图"></a>列一份前端知识架构图</h2><p>根据上一篇的介绍，我们尝试的列一份知识图片</p>
-<h3 id="JavaScript"><a href="#JavaScript" class="headerlink" title="JavaScript"></a>JavaScript</h3><p><img src="/images/%E9%87%8D%E5%AD%A6%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0-1/1ac20555.png" alt="JavaScript 知识架构"></p>
-<h3 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h3><p><img src="/images/%E9%87%8D%E5%AD%A6%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0-1/1d1d05a8.png" alt="HTML 知识架构"></p>
-<p>对于 HTML 来说我们最直观的感受就是标签，那就按照标签的属性来划分。这个东西没有对错之分，只要符合划分原则就行。</p>
-<h3 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h3><p><img src="/images/%E9%87%8D%E5%AD%A6%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0-1/4abf7c12.png" alt="CSS 知识架构"></p>
-<h3 id="浏览器"><a href="#浏览器" class="headerlink" title="浏览器"></a>浏览器</h3><p><img src="/images/%E9%87%8D%E5%AD%A6%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0-1/03f35380.png" alt="浏览器知识架构"></p>
-<h3 id="前端工程实践"><a href="#前端工程实践" class="headerlink" title="前端工程实践"></a>前端工程实践</h3><p><img src="/images/%E9%87%8D%E5%AD%A6%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0-1/b1326b14.png" alt="前端工程实践"></p>
-<p>对于这部分而言对于团队的意义会更重大一点</p>
+<p>我们先来解释一下 <code>void</code> 运算符，该运算符对给定的表达式进行求值，然后返回 <code>undefined</code>。Undefined 表示未定义的，所有变量的初始类型都是 Undefined，该类型只有一个值 <code>undefined</code>。</p>
+<p>这里说 <code>void 0</code> 去代替 <code>undefined</code> 是因为 <code>undefined</code> 不是 JS 中的关键字，他是一个变量，作为变量来说，就有可能被篡改，我可以直接 <code>undefined = 123</code>，也是为了保证在逻辑代码中不要出现这种 *** 问题，有的规范会要求用 <code>void 0</code> 来代替 <code>undefined</code>。</p>
+<p>这里其实有一个常见问题就是如何判断一个值是 <code>undefined</code>，毕竟这孩子是能被篡改的。</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">let</span> i
+i <span class="token operator">===</span> undefined  <span class="token comment" spellcheck="true">// true</span>
+<span class="token keyword">typeof</span> i <span class="token operator">==</span> <span class="token string">'undefined'</span>  <span class="token comment" spellcheck="true">//true</span></code></pre>
+<p>上面提到了 Undefined ，就一定要说说 Null，这俩孩子就好像是绑在一起的，面试的时候总会问到。</p>
+<p>Null 表示空，而且它是个关键字，不用担心篡改的问题。不过需要注意的是 <code>null == undefined</code> 是 <code>true</code> ，需要用 <code>===</code></p>
+<h2 id="Boolean"><a href="#Boolean" class="headerlink" title="Boolean"></a>Boolean</h2><p>注意强制转为会转成 <code>false</code> 的值</p>
+<ul>
+<li><code>false</code></li>
+<li><code>0</code></li>
+<li><code>-0</code></li>
+<li><code>''</code></li>
+<li><code>null</code></li>
+<li><code>undefined</code></li>
+<li><code>NaN</code></li>
+</ul>
+<h2 id="String"><a href="#String" class="headerlink" title="String"></a>String</h2><blockquote>
+<p>字符串有最大长度吗？</p>
+</blockquote>
+<p>有最大长度是肯定有的，但是这个长度不是我们平常意义上的多少个字，而是 UTF16 编码长度，最大长度为 <strong>2^53 - 1</strong></p>
+<p>需要注意的是字符串一定构造出来，就没有方法能够变更。这也就是我们更改字符串的时候为什么会先拆再组合。</p>
+<h2 id="Number"><a href="#Number" class="headerlink" title="Number"></a>Number</h2><p>Number 中有几个特例需要注意一下 <code>NaN</code>、<code>+0</code>、<code>-0</code>、<code>Infinity</code>、<code>-Infinity</code>。</p>
+<p><code>-0</code> 在平常工作中也没有太注意过，但是文章中有提到需要留意区分，照例还是安排一下。</p>
+<blockquote>
+<p>另外，值得注意的是，JavaScript 中有 +0 和 -0，在加法类运算中它们没有区别，但是除法的场合则需要特别留意区分，“忘记检测除以 -0，而得到负无穷大”的情况经常会导致错误，而区分 +0 和 -0 的方式，正是检测 1/x 是 Infinity 还是 -Infinity。</p>
+</blockquote>
+<p>我们回到文章中提到的经典迷惑题</p>
+<blockquote>
+<p>0.1 + 0.2 不是等于 0.3 么？为什么 JavaScript 里不是这样的？</p>
+</blockquote>
+<p>这里需要把握两个知识点</p>
+<ol>
+<li>在 JS 中，Number 是<strong>双精度浮点数规则</strong>，所以加起来是 0.30000…，浮点数运算的精度问题导致等式左右的结果不想等，差的很小。</li>
+<li>比较方法也有锅，我们不能用 <code>==</code> 或 <code>===</code> 来比较，我们应该比较两者的最小精度是不是小于 JS 提供的最小精度值</li>
+</ol>
+<pre class=" language-javascript"><code class="language-javascript">Math<span class="token punctuation">.</span><span class="token function">abs</span><span class="token punctuation">(</span><span class="token number">0.1</span> <span class="token operator">+</span> <span class="token number">0.2</span> <span class="token operator">-</span> <span class="token number">0.3</span><span class="token punctuation">)</span> <span class="token operator">&lt;=</span> Number<span class="token punctuation">.</span>EPSILON</code></pre>
+<h2 id="Symbol"><a href="#Symbol" class="headerlink" title="Symbol"></a>Symbol</h2><p>这是 ES6 中引入的新类型。在 ES5 中对象的 key 都是字符串，这就会导致同名的会有覆盖行为。为了保证每个属性的 key 都是唯一的，ES6 引入了 Symbol，它表示唯一的值。</p>
+<p>由于 Symbol 生成的是原始类型值，不是对象，所以不能用 <code>new</code></p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">let</span> a <span class="token operator">=</span> <span class="token function">Symbol</span><span class="token punctuation">(</span><span class="token string">'bar'</span><span class="token punctuation">)</span>
+<span class="token keyword">let</span> b <span class="token operator">=</span> <span class="token function">Symbol</span><span class="token punctuation">(</span><span class="token string">'bar'</span><span class="token punctuation">)</span>
+
+a <span class="token operator">==</span> b  <span class="token comment" spellcheck="true">// false</span>
+a <span class="token operator">===</span> b <span class="token comment" spellcheck="true">// false</span></code></pre>
+<h2 id="Object"><a href="#Object" class="headerlink" title="Object"></a>Object</h2><p>这个类型涉及的知识点就比较多了，后面应该会拆开单独讲吧。</p>
+<p>在 JS 中，对象的属性分为<strong>数据属性</strong>和<strong>属性访问器</strong>，对于 key 来说可以是字符串或者 Symbol</p>
+<blockquote>
+<p>为什么给对象添加的方法能用在基本类型上？</p>
+</blockquote>
+<p>答：运算符提供了装箱操作，它会根据基础类型构造一个临时对象，让我们能在基础类型上调用对应的对象方法。</p>
+<h2 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h2><p>在文章中还涉及到了类型转换的装箱操作和封箱操作，说实话没怎么看懂，等我搞定了我再来更新！</p>
 
             </div>
             <hr/>
@@ -383,12 +426,12 @@
                                     <span class="chip bg-color">前端</span>
                                 </a>
                             
-                                <a href="/tags/%E7%9F%A5%E8%AF%86%E6%9E%B6%E6%9E%84/">
-                                    <span class="chip bg-color">知识架构</span>
-                                </a>
-                            
                                 <a href="/tags/JavaScript/">
                                     <span class="chip bg-color">JavaScript</span>
+                                </a>
+                            
+                                <a href="/tags/%E7%B1%BB%E5%9E%8B/">
+                                    <span class="chip bg-color">类型</span>
                                 </a>
                             
                         </div>
@@ -431,12 +474,12 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/post/ckh309b8r000k2stl4jtj2cx2/">
+                <a href="/post/ckh34k7ye000to0tlfl9o94yz/">
                     <div class="card-image">
                         
-                        <img src="/images/%E9%87%8D%E5%AD%A6%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0-2/head_22.jpg" class="responsive-img" alt="重学前端笔记（2）">
+                        <img src="/images/%E9%87%8D%E5%AD%A6%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0-3/head_22.jpg" class="responsive-img" alt="重学前端（3）">
                         
-                        <span class="card-title">重学前端笔记（2）</span>
+                        <span class="card-title">重学前端（3）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -472,8 +515,8 @@
                         <span class="chip bg-color">JavaScript</span>
                     </a>
                     
-                    <a href="/tags/%E7%B1%BB%E5%9E%8B/">
-                        <span class="chip bg-color">类型</span>
+                    <a href="/tags/%E5%AF%B9%E8%B1%A1/">
+                        <span class="chip bg-color">对象</span>
                     </a>
                     
                 </div>
@@ -484,15 +527,15 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/post/ckh309b8g00032stl3x513nf3/">
+                <a href="/post/ckh34k7y20003o0tl535o62qx/">
                     <div class="card-image">
                         
-                        <img src="/images/%E9%87%8D%E5%AD%A6%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0-1/head_22.jpg" class="responsive-img" alt="重学前端笔记(1)">
+                        <img src="/images/%E9%87%8D%E5%AD%A6%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0-1/head_22.jpg" class="responsive-img" alt="重学前端笔记（1）">
                         
-                        <span class="card-title">重学前端笔记(1)</span>
+                        <span class="card-title">重学前端笔记（1）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -517,7 +560,6 @@
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
