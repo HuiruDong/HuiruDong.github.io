@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="重学前端笔记（6）, 有猫的茶水间">
+    <meta name="keywords" content="重学前端（3）, 有猫的茶水间">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>重学前端笔记（6） | 有猫的茶水间</title>
+    <title>重学前端（3） | 有猫的茶水间</title>
     <link rel="icon" type="image/png" href="/favicon1.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -268,12 +268,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/images/%E9%87%8D%E5%AD%A6%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0-6/head_22.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/images/%E9%87%8D%E5%AD%A6%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0-3/head_22.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">重学前端笔记（6）</h1>
+                    <h1 class="description center-align post-title">重学前端（3）</h1>
                 </div>
             </div>
         </div>
@@ -303,12 +303,8 @@
                                 <span class="chip bg-color">JavaScript</span>
                             </a>
                         
-                            <a href="/tags/%E9%97%AD%E5%8C%85/">
-                                <span class="chip bg-color">闭包</span>
-                            </a>
-                        
-                            <a href="/tags/%E6%89%A7%E8%A1%8C%E4%B8%8A%E4%B8%8B%E6%96%87/">
-                                <span class="chip bg-color">执行上下文</span>
+                            <a href="/tags/%E5%AF%B9%E8%B1%A1/">
+                                <span class="chip bg-color">对象</span>
                             </a>
                         
                     </div>
@@ -332,7 +328,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-11-05
+                    2020-10-30
                 </div>
                 
 
@@ -348,82 +344,46 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="闭包"><a href="#闭包" class="headerlink" title="闭包"></a>闭包</h2><blockquote>
-<p>闭包其实只是一个绑定了执行环境的函数</p>
+                <blockquote>
+<p>面向对象还是基于对象？</p>
 </blockquote>
-<p>所以说闭包本质上是一个函数，特殊之处在于他绑定了一个执行环境。</p>
-<p>闭包的组成部分</p>
+<h2 id="对象的特征"><a href="#对象的特征" class="headerlink" title="对象的特征"></a>对象的特征</h2><h3 id="唯一标识：即使完全相同的两个对象，也并非同一个对象"><a href="#唯一标识：即使完全相同的两个对象，也并非同一个对象" class="headerlink" title="唯一标识：即使完全相同的两个对象，也并非同一个对象"></a>唯一标识：即使完全相同的两个对象，也并非同一个对象</h3><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">let</span> a <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token keyword">let</span> b <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+a <span class="token operator">==</span> b <span class="token comment" spellcheck="true">// false</span></code></pre>
+<p>对象具有唯一标识的<strong>内存地址</strong>，所以具有唯一标识。</p>
+<h3 id="状态：对象具有状态，同一对象可能处于不同状态"><a href="#状态：对象具有状态，同一对象可能处于不同状态" class="headerlink" title="状态：对象具有状态，同一对象可能处于不同状态"></a>状态：对象具有状态，同一对象可能处于不同状态</h3><p>在 JS 中，将<strong>状态</strong>和<strong>行为</strong>统一抽象为<strong>属性</strong>，所以和第三点行为一起说。</p>
+<h3 id="行为：对象的状态可能因为它的行为产生变迁"><a href="#行为：对象的状态可能因为它的行为产生变迁" class="headerlink" title="行为：对象的状态可能因为它的行为产生变迁"></a>行为：对象的状态可能因为它的行为产生变迁</h3><p>由于 JS 把行为和状态统一抽象为属性，所以属性的方式就可以有数据或函数</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">let</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span>
+    a<span class="token punctuation">:</span> <span class="token string">'Hi~'</span><span class="token punctuation">,</span>
+    b<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>a<span class="token punctuation">)</span> <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<h2 id="对象的两类属性"><a href="#对象的两类属性" class="headerlink" title="对象的两类属性"></a>对象的两类属性</h2><p>JS 用一组特征（attribute）来描述属性（property）</p>
+<h3 id="数据属性"><a href="#数据属性" class="headerlink" title="数据属性"></a>数据属性</h3><p>特征：</p>
 <ul>
-<li>环境部分<ul>
-<li>环境：函数的词法环境（执行上下文的一部分）</li>
-<li>标识符列表：函数中用到的未声明的变量</li>
+<li>value</li>
+<li>writable：默认为 <code>true</code></li>
+<li>enumerable：默认为 <code>true</code></li>
+<li>configurable：默认为 <code>true</code></li>
 </ul>
-</li>
-<li>表达式部分：函数体</li>
+<p>想要查看某一属性的配置的话，可以用到 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptor"><code>Object.getOwnPropertyDescriptor(obj, key)</code></a> 查看</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">let</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span> a<span class="token punctuation">:</span> <span class="token number">123</span> <span class="token punctuation">}</span>
+
+Object<span class="token punctuation">.</span><span class="token function">getOwnPropertyDescriptor</span><span class="token punctuation">(</span>obj<span class="token punctuation">,</span> <span class="token string">'a'</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// { value: 123, writable: true, enumerable: true, configurable: true }</span></code></pre>
+<p>如果想要更改的话就用 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty">Object.defineProperty(obj, key, config)</a></p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">let</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span> a<span class="token punctuation">:</span> <span class="token number">123</span> <span class="token punctuation">}</span>
+<span class="token keyword">let</span> config <span class="token operator">=</span> <span class="token punctuation">{</span> enumerable<span class="token punctuation">:</span> <span class="token boolean">false</span> <span class="token punctuation">}</span>
+Object<span class="token punctuation">.</span><span class="token function">defineProperty</span><span class="token punctuation">(</span>obj<span class="token punctuation">,</span> <span class="token string">'a'</span><span class="token punctuation">,</span> config<span class="token punctuation">)</span></code></pre>
+<h3 id="访问器属性"><a href="#访问器属性" class="headerlink" title="访问器属性"></a>访问器属性</h3><p>特征</p>
+<ul>
+<li>getter</li>
+<li>setter</li>
+<li>enumerable</li>
+<li>configurable</li>
 </ul>
-<p>其实早期我一直把执行上下文当成闭包，实际上 JS 中和闭包对应的概念是函数，不是执行上下文或者作用域。</p>
-<p>另外 MDN 对于闭包的解释是：闭包是指那些能够访问<strong>自由变量</strong>的<strong>函数</strong>，这里也验证了闭包本质上来说就是一个函数。</p>
-<p>但是什么是自由变量呢？自由变量是指在函数中使用的，但既不是函数参数也不是函数的局部变量的变量。</p>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">1</span>
-
-<span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span>
-<span class="token punctuation">}</span>
-
-<span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
-<p>这里的 <code>a</code> 就是一个自由变量。</p>
-<p>综合一下我们可以说<strong>闭包 = 函数 + 函数能够访问的自由变量</strong>。</p>
-<h2 id="执行上下文：执行的基础设施"><a href="#执行上下文：执行的基础设施" class="headerlink" title="执行上下文：执行的基础设施"></a>执行上下文：执行的基础设施</h2><p>JS 中，词法环境（闭包中的环境部分）只是执行上下文的一部分，不是全部。</p>
-<p><strong>JS 标准中把一段代码（包括函数），执行所需要的所有信息定义为“执行上下文”。</strong></p>
-<p>说了这么半天其实都是从标准上来说闭包、执行上下文是个啥东西，但是还是要放到代码上来看。</p>
-<h2 id="代码推导什么是执行上下文"><a href="#代码推导什么是执行上下文" class="headerlink" title="代码推导什么是执行上下文"></a>代码推导什么是执行上下文</h2><p>观察以下代码</p>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> b <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
-<span class="token keyword">let</span> c <span class="token operator">=</span> <span class="token number">1</span>
-<span class="token keyword">this</span><span class="token punctuation">.</span>a <span class="token operator">=</span> <span class="token number">2</span></code></pre>
-<p>思考几个问题：</p>
-<ol>
-<li>var 把 b 声明到哪里；</li>
-<li>b 表示哪个变量；</li>
-<li>b 的原型是哪个对象；</li>
-<li>let 把 c 声明到哪里；</li>
-<li>this 指向哪个对象。 </li>
-</ol>
-<h3 id="var-声明与赋值"><a href="#var-声明与赋值" class="headerlink" title="var 声明与赋值"></a>var 声明与赋值</h3><p>我们首先要明确一点，<strong>var 声明作用域是函数执行的作用域</strong>，也就是说它会穿透 for、if 等语句。</p>
-<p>既然能穿透，就有技巧能够控制 var 在特定范围内生效，老版本的 JS 中有一个叫做立即执行的函数表达式（IIFE）。通过创建一个函数，并且立即执行，来构造一个新的域。</p>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token punctuation">;</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">4</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
-<p>之前大家都写分号，放到现在不写分号就有一个问题，如果 IIFE 上面有一个函数，没写分号，那么 IIFE 的括号会被当成上一个函数的调用，所以有些规范要求写分号。</p>
-<p>但这样很怪，所以推荐使用 void 关键字。</p>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">void</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">4</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span>
-<span class="token punctuation">}</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
-<h3 id="let"><a href="#let" class="headerlink" title="let"></a>let</h3><p>let 会产生一个块级作用域，比起 var 来说好很多。</p>
-<h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><p>在 JS 中切换上下文最常见的场景就是在函数调用中，首先我们先给函数分个类，然后一个一个看看。</p>
-<ol>
-<li>普通函数：<code>function</code> 关键字定义的</li>
-<li>箭头函数：<code>() =&gt; {}</code></li>
-<li>在 <code>calss</code> 里面定义的函数：也就是我们做封装时候的方法</li>
-<li>生成器函数：<code>function *</code> 定义的</li>
-<li>用 <code>class</code> 定义的类：类的本质还是函数</li>
-<li>异步函数：添加 <code>async</code> 关键字的函数</li>
-</ol>
-<h2 id="this"><a href="#this" class="headerlink" title="this"></a><code>this</code></h2><p><strong><code>this</code> 是执行上下文中很重要的一个组成部分，同一个函数调用的方式不同，得到的 <code>this</code> 值也不一样。</strong></p>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">showThis</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span> <span class="token punctuation">}</span>
-
-<span class="token keyword">var</span> o <span class="token operator">=</span> <span class="token punctuation">{</span> showThis<span class="token punctuation">:</span> showThis <span class="token punctuation">}</span>
-
-<span class="token function">showThis</span><span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true">// global</span>
-o<span class="token punctuation">.</span><span class="token function">showThis</span><span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true">// o</span></code></pre>
-<p>普通函数的 <code>this</code> 值由“<strong>调用它所使用的引用</strong>”决定的，简单说就是谁调用，<code>this</code> 就指向谁。</p>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">const</span> showThis <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span> <span class="token punctuation">}</span>
-
-<span class="token keyword">var</span> o <span class="token operator">=</span> <span class="token punctuation">{</span> showThis<span class="token punctuation">:</span> showThis <span class="token punctuation">}</span>
-
-<span class="token function">showThis</span><span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true">// global</span>
-o<span class="token punctuation">.</span><span class="token function">showThis</span><span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true">// global</span></code></pre>
-<p>改成箭头函数之后，无论用什么引用调用它，都不影响他的 <code>this</code> 值。</p>
+<h2 id="答案"><a href="#答案" class="headerlink" title="答案"></a>答案</h2><blockquote>
+<p>JavaScript 语言标准也已经明确说明，JavaScript 是一门面向对象的语言，我想标准中能这样说，正是因为 JavaScript 的高度动态性的对象系统。</p>
+</blockquote>
 
             </div>
             <hr/>
@@ -445,12 +405,8 @@ o<span class="token punctuation">.</span><span class="token function">showThis</
                                     <span class="chip bg-color">JavaScript</span>
                                 </a>
                             
-                                <a href="/tags/%E9%97%AD%E5%8C%85/">
-                                    <span class="chip bg-color">闭包</span>
-                                </a>
-                            
-                                <a href="/tags/%E6%89%A7%E8%A1%8C%E4%B8%8A%E4%B8%8B%E6%96%87/">
-                                    <span class="chip bg-color">执行上下文</span>
+                                <a href="/tags/%E5%AF%B9%E8%B1%A1/">
+                                    <span class="chip bg-color">对象</span>
                                 </a>
                             
                         </div>
@@ -493,12 +449,12 @@ o<span class="token punctuation">.</span><span class="token function">showThis</
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/post/ckh4ef6n6001auwtl0sftciyc/">
+                <a href="/post/ckh4mlo3t000130tlgv1i8jza/">
                     <div class="card-image">
                         
-                        <img src="/images/%E9%87%8D%E5%AD%A6%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0-7/head_22.jpg" class="responsive-img" alt="重学前端笔记（7）">
+                        <img src="/images/%E5%A4%9A%E7%A7%8D%E7%BB%A7%E6%89%BF%E6%96%B9%E5%BC%8F/head_22.jpg" class="responsive-img" alt="多种继承方式">
                         
-                        <span class="card-title">重学前端笔记（7）</span>
+                        <span class="card-title">多种继承方式</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -509,14 +465,14 @@ o<span class="token punctuation">.</span><span class="token function">showThis</
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-11-05
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-10-30
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="post-category">
-                                    学习笔记
+                            <a href="/categories/JS-%E6%B7%B7%E6%B7%86%E7%9F%A5%E8%AF%86%E7%82%B9/" class="post-category">
+                                    JS 混淆知识点
                                 </a>
                             
                             
@@ -530,12 +486,8 @@ o<span class="token punctuation">.</span><span class="token function">showThis</
                         <span class="chip bg-color">前端</span>
                     </a>
                     
-                    <a href="/tags/HTML/">
-                        <span class="chip bg-color">HTML</span>
-                    </a>
-                    
-                    <a href="/tags/%E6%A0%87%E7%AD%BE/">
-                        <span class="chip bg-color">标签</span>
+                    <a href="/tags/%E7%BB%A7%E6%89%BF/">
+                        <span class="chip bg-color">继承</span>
                     </a>
                     
                 </div>
@@ -549,12 +501,12 @@ o<span class="token punctuation">.</span><span class="token function">showThis</
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/post/ckh4ef6n50019uwtl6lfc5j4j/">
+                <a href="/post/ckh4mlo3y000330tlgyiv3vmd/">
                     <div class="card-image">
                         
-                        <img src="/images/%E9%87%8D%E5%AD%A6%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0-5/head_22.jpg" class="responsive-img" alt="重学前端笔记（5）">
+                        <img src="/images/%E9%87%8D%E5%AD%A6%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0-2/head_22.jpg" class="responsive-img" alt="重学前端笔记（2）">
                         
-                        <span class="card-title">重学前端笔记（5）</span>
+                        <span class="card-title">重学前端笔记（2）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -565,7 +517,7 @@ o<span class="token punctuation">.</span><span class="token function">showThis</
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-11-04
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-30
                             </span>
                         <span class="publish-author">
                             
@@ -586,16 +538,12 @@ o<span class="token punctuation">.</span><span class="token function">showThis</
                         <span class="chip bg-color">前端</span>
                     </a>
                     
+                    <a href="/tags/%E7%B1%BB%E5%9E%8B/">
+                        <span class="chip bg-color">类型</span>
+                    </a>
+                    
                     <a href="/tags/JavaScript/">
                         <span class="chip bg-color">JavaScript</span>
-                    </a>
-                    
-                    <a href="/tags/%E6%89%A7%E8%A1%8C%E6%97%B6/">
-                        <span class="chip bg-color">执行时</span>
-                    </a>
-                    
-                    <a href="/tags/%E5%BC%82%E6%AD%A5/">
-                        <span class="chip bg-color">异步</span>
                     </a>
                     
                 </div>
