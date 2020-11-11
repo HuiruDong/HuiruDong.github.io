@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="重学前端笔记（6）, 有猫的茶水间">
+    <meta name="keywords" content="重学前端笔记（1）, 有猫的茶水间">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>重学前端笔记（6） | 有猫的茶水间</title>
+    <title>重学前端笔记（1） | 有猫的茶水间</title>
     <link rel="icon" type="image/png" href="/favicon1.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -268,12 +268,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/images/%E9%87%8D%E5%AD%A6%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0-6/head_22.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/images/%E9%87%8D%E5%AD%A6%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0-1/head_22.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">重学前端笔记（6）</h1>
+                    <h1 class="description center-align post-title">重学前端笔记（1）</h1>
                 </div>
             </div>
         </div>
@@ -303,12 +303,8 @@
                                 <span class="chip bg-color">JavaScript</span>
                             </a>
                         
-                            <a href="/tags/%E9%97%AD%E5%8C%85/">
-                                <span class="chip bg-color">闭包</span>
-                            </a>
-                        
-                            <a href="/tags/%E6%89%A7%E8%A1%8C%E4%B8%8A%E4%B8%8B%E6%96%87/">
-                                <span class="chip bg-color">执行上下文</span>
+                            <a href="/tags/%E7%9F%A5%E8%AF%86%E6%9E%B6%E6%9E%84/">
+                                <span class="chip bg-color">知识架构</span>
                             </a>
                         
                     </div>
@@ -332,7 +328,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-11-05
+                    2020-10-10
                 </div>
                 
 
@@ -348,82 +344,28 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="闭包"><a href="#闭包" class="headerlink" title="闭包"></a>闭包</h2><blockquote>
-<p>闭包其实只是一个绑定了执行环境的函数</p>
+                <p><a target="_blank" rel="noopener" href="https://time.geekbang.org/column/intro/154">《重学前端》</a> 购买了很久，之前也断断续续的看了一些，一直没有很认真的学习。现在终于有时间沉下心来好好看看了。这个系列的笔记和原文对比起来可能有些不一样，因为我会看完一篇，加上自己的理解对整篇文章做一个回顾和总结，所以建议先看完对应的章节再看笔记。</p>
+<h2 id="开篇词-从今天起，重新理解前端"><a href="#开篇词-从今天起，重新理解前端" class="headerlink" title="开篇词 | 从今天起，重新理解前端"></a>开篇词 | 从今天起，重新理解前端</h2><p>本篇首先介绍了前端的发展历史。青铜时期（ajax 出现）→ 白银时期（前端开始有意识的处理数据，保存数据，逐步与后端分离）→ 黄金时代（框架的出现）</p>
+<p>其次介绍了《重学前端》的目的，作者会提供视角帮助读者系统的认识前端知识点，形成自己的知识图谱。将知识从点到面，逐步涵盖理解前端技能点。</p>
+<h2 id="明确你的前端学习路线和方法"><a href="#明确你的前端学习路线和方法" class="headerlink" title="明确你的前端学习路线和方法"></a>明确你的前端学习路线和方法</h2><p>很多人都说前端门槛相当低，但是能一直向上走的人没几个。我个人认为门槛是低，但就是因为低，导致知识点庞大且杂乱。同样的效果通过不同属性都可以达到，但是根本上他们之间还有一定的却别。这让学习成本在不断的增加。前端技术的发展比任何一门语言发展的都快，无论是框架、库还是相关标准，变化之快是你想不到的，这在某种程度上无疑增加了前端工作者的学习成本。</p>
+<p>面对这种「学习」环境，我们能做的就是找到适合自己的学习方法和学习路径。</p>
+<p>winter 在文章中介绍了两种学习方法：<strong>建立知识架构</strong>和<strong>追本溯源</strong></p>
+<h3 id="建立知识架构"><a href="#建立知识架构" class="headerlink" title="建立知识架构"></a>建立知识架构</h3><p>简单说来是就画自己的知识图谱，从父节点一层一层细化自己的子节点。</p>
+<p>前端从大方向来分可以分为：HTML、CSS、JavaScript、浏览器、综合应用</p>
+<p>我们以  JavaScript 为例一层一层细化节点</p>
+<blockquote>
+<p>因为对于任何计算机语言来说，必定是“用规定的文法，去表达特定语义，最终操作运行时的”一个过程</p>
 </blockquote>
-<p>所以说闭包本质上是一个函数，特殊之处在于他绑定了一个执行环境。</p>
-<p>闭包的组成部分</p>
-<ul>
-<li>环境部分<ul>
-<li>环境：函数的词法环境（执行上下文的一部分）</li>
-<li>标识符列表：函数中用到的未声明的变量</li>
-</ul>
-</li>
-<li>表达式部分：函数体</li>
-</ul>
-<p>其实早期我一直把执行上下文当成闭包，实际上 JS 中和闭包对应的概念是函数，不是执行上下文或者作用域。</p>
-<p>另外 MDN 对于闭包的解释是：闭包是指那些能够访问<strong>自由变量</strong>的<strong>函数</strong>，这里也验证了闭包本质上来说就是一个函数。</p>
-<p>但是什么是自由变量呢？自由变量是指在函数中使用的，但既不是函数参数也不是函数的局部变量的变量。</p>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">1</span>
-
-<span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span>
-<span class="token punctuation">}</span>
-
-<span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
-<p>这里的 <code>a</code> 就是一个自由变量。</p>
-<p>综合一下我们可以说<strong>闭包 = 函数 + 函数能够访问的自由变量</strong>。</p>
-<h2 id="执行上下文：执行的基础设施"><a href="#执行上下文：执行的基础设施" class="headerlink" title="执行上下文：执行的基础设施"></a>执行上下文：执行的基础设施</h2><p>JS 中，词法环境（闭包中的环境部分）只是执行上下文的一部分，不是全部。</p>
-<p><strong>JS 标准中把一段代码（包括函数），执行所需要的所有信息定义为“执行上下文”。</strong></p>
-<p>说了这么半天其实都是从标准上来说闭包、执行上下文是个啥东西，但是还是要放到代码上来看。</p>
-<h2 id="代码推导什么是执行上下文"><a href="#代码推导什么是执行上下文" class="headerlink" title="代码推导什么是执行上下文"></a>代码推导什么是执行上下文</h2><p>观察以下代码</p>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> b <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
-<span class="token keyword">let</span> c <span class="token operator">=</span> <span class="token number">1</span>
-<span class="token keyword">this</span><span class="token punctuation">.</span>a <span class="token operator">=</span> <span class="token number">2</span></code></pre>
-<p>思考几个问题：</p>
-<ol>
-<li>var 把 b 声明到哪里；</li>
-<li>b 表示哪个变量；</li>
-<li>b 的原型是哪个对象；</li>
-<li>let 把 c 声明到哪里；</li>
-<li>this 指向哪个对象。 </li>
-</ol>
-<h3 id="var-声明与赋值"><a href="#var-声明与赋值" class="headerlink" title="var 声明与赋值"></a>var 声明与赋值</h3><p>我们首先要明确一点，<strong>var 声明作用域是函数执行的作用域</strong>，也就是说它会穿透 for、if 等语句。</p>
-<p>既然能穿透，就有技巧能够控制 var 在特定范围内生效，老版本的 JS 中有一个叫做立即执行的函数表达式（IIFE）。通过创建一个函数，并且立即执行，来构造一个新的域。</p>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token punctuation">;</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">4</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
-<p>之前大家都写分号，放到现在不写分号就有一个问题，如果 IIFE 上面有一个函数，没写分号，那么 IIFE 的括号会被当成上一个函数的调用，所以有些规范要求写分号。</p>
-<p>但这样很怪，所以推荐使用 void 关键字。</p>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">void</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">4</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span>
-<span class="token punctuation">}</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
-<h3 id="let"><a href="#let" class="headerlink" title="let"></a>let</h3><p>let 会产生一个块级作用域，比起 var 来说好很多。</p>
-<h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><p>在 JS 中切换上下文最常见的场景就是在函数调用中，首先我们先给函数分个类，然后一个一个看看。</p>
-<ol>
-<li>普通函数：<code>function</code> 关键字定义的</li>
-<li>箭头函数：<code>() =&gt; {}</code></li>
-<li>在 <code>calss</code> 里面定义的函数：也就是我们做封装时候的方法</li>
-<li>生成器函数：<code>function *</code> 定义的</li>
-<li>用 <code>class</code> 定义的类：类的本质还是函数</li>
-<li>异步函数：添加 <code>async</code> 关键字的函数</li>
-</ol>
-<h2 id="this"><a href="#this" class="headerlink" title="this"></a>this</h2><p><strong><code>this</code> 是执行上下文中很重要的一个组成部分，同一个函数调用的方式不同，得到的 <code>this</code> 值也不一样。</strong></p>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">showThis</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span> <span class="token punctuation">}</span>
-
-<span class="token keyword">var</span> o <span class="token operator">=</span> <span class="token punctuation">{</span> showThis<span class="token punctuation">:</span> showThis <span class="token punctuation">}</span>
-
-<span class="token function">showThis</span><span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true">// global</span>
-o<span class="token punctuation">.</span><span class="token function">showThis</span><span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true">// o</span></code></pre>
-<p>普通函数的 <code>this</code> 值由“<strong>调用它所使用的引用</strong>”决定的，简单说就是谁调用，<code>this</code> 就指向谁。</p>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">const</span> showThis <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span> <span class="token punctuation">}</span>
-
-<span class="token keyword">var</span> o <span class="token operator">=</span> <span class="token punctuation">{</span> showThis<span class="token punctuation">:</span> showThis <span class="token punctuation">}</span>
-
-<span class="token function">showThis</span><span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true">// global</span>
-o<span class="token punctuation">.</span><span class="token function">showThis</span><span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true">// global</span></code></pre>
-<p>改成箭头函数之后，无论用什么引用调用它，都不影响他的 <code>this</code> 值。</p>
+<p><img src="/images/%E9%87%8D%E5%AD%A6%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0-1/156d0524.png" alt="JavaScript 顶层分类"></p>
+<h3 id="追本溯源"><a href="#追本溯源" class="headerlink" title="追本溯源"></a>追本溯源</h3><p>简单说就是「翻旧账」，去看论文、去看标准。虽然我觉得标准不是给人看的。</p>
+<h2 id="列一份前端知识架构图"><a href="#列一份前端知识架构图" class="headerlink" title="列一份前端知识架构图"></a>列一份前端知识架构图</h2><p>根据上一篇的介绍，我们尝试的列一份知识图片</p>
+<h3 id="JavaScript"><a href="#JavaScript" class="headerlink" title="JavaScript"></a>JavaScript</h3><p><img src="/images/%E9%87%8D%E5%AD%A6%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0-1/1ac20555.png" alt="JavaScript 知识架构"></p>
+<h3 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h3><p><img src="/images/%E9%87%8D%E5%AD%A6%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0-1/1d1d05a8.png" alt="HTML 知识架构"></p>
+<p>对于 HTML 来说我们最直观的感受就是标签，那就按照标签的属性来划分。这个东西没有对错之分，只要符合划分原则就行。</p>
+<h3 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h3><p><img src="/images/%E9%87%8D%E5%AD%A6%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0-1/4abf7c12.png" alt="CSS 知识架构"></p>
+<h3 id="浏览器"><a href="#浏览器" class="headerlink" title="浏览器"></a>浏览器</h3><p><img src="/images/%E9%87%8D%E5%AD%A6%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0-1/03f35380.png" alt="浏览器知识架构"></p>
+<h3 id="前端工程实践"><a href="#前端工程实践" class="headerlink" title="前端工程实践"></a>前端工程实践</h3><p><img src="/images/%E9%87%8D%E5%AD%A6%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0-1/b1326b14.png" alt="前端工程实践"></p>
+<p>对于这部分而言对于团队的意义会更重大一点</p>
 
             </div>
             <hr/>
@@ -445,12 +387,8 @@ o<span class="token punctuation">.</span><span class="token function">showThis</
                                     <span class="chip bg-color">JavaScript</span>
                                 </a>
                             
-                                <a href="/tags/%E9%97%AD%E5%8C%85/">
-                                    <span class="chip bg-color">闭包</span>
-                                </a>
-                            
-                                <a href="/tags/%E6%89%A7%E8%A1%8C%E4%B8%8A%E4%B8%8B%E6%96%87/">
-                                    <span class="chip bg-color">执行上下文</span>
+                                <a href="/tags/%E7%9F%A5%E8%AF%86%E6%9E%B6%E6%9E%84/">
+                                    <span class="chip bg-color">知识架构</span>
                                 </a>
                             
                         </div>
@@ -493,12 +431,12 @@ o<span class="token punctuation">.</span><span class="token function">showThis</
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/post/ckh4mlo4j001530tlhjfgaoq6/">
+                <a href="/post/ckhcv19p60003k4tl9kncaw7t/">
                     <div class="card-image">
                         
-                        <img src="/images/%E9%87%8D%E5%AD%A6%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0-7/head_22.jpg" class="responsive-img" alt="重学前端笔记（7）">
+                        <img src="/images/%E9%87%8D%E5%AD%A6%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0-2/head_22.jpg" class="responsive-img" alt="重学前端笔记（2）">
                         
-                        <span class="card-title">重学前端笔记（7）</span>
+                        <span class="card-title">重学前端笔记（2）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -509,7 +447,7 @@ o<span class="token punctuation">.</span><span class="token function">showThis</
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-11-05
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-10-30
                         </span>
                         <span class="publish-author">
                             
@@ -530,12 +468,12 @@ o<span class="token punctuation">.</span><span class="token function">showThis</
                         <span class="chip bg-color">前端</span>
                     </a>
                     
-                    <a href="/tags/HTML/">
-                        <span class="chip bg-color">HTML</span>
+                    <a href="/tags/%E7%B1%BB%E5%9E%8B/">
+                        <span class="chip bg-color">类型</span>
                     </a>
                     
-                    <a href="/tags/%E6%A0%87%E7%AD%BE/">
-                        <span class="chip bg-color">标签</span>
+                    <a href="/tags/JavaScript/">
+                        <span class="chip bg-color">JavaScript</span>
                     </a>
                     
                 </div>
@@ -546,15 +484,15 @@ o<span class="token punctuation">.</span><span class="token function">showThis</
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+                本篇&nbsp;<i class="far fa-dot-circle"></i>
             </div>
             <div class="card">
-                <a href="/post/ckh4mlo4j001330tldj9ser4f/">
+                <a href="/post/ckhcv19pc0009k4tl2jovbzea/">
                     <div class="card-image">
                         
-                        <img src="/images/%E9%87%8D%E5%AD%A6%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0-5/head_22.jpg" class="responsive-img" alt="重学前端笔记（5）">
+                        <img src="/images/%E9%87%8D%E5%AD%A6%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0-1/head_22.jpg" class="responsive-img" alt="重学前端笔记（1）">
                         
-                        <span class="card-title">重学前端笔记（5）</span>
+                        <span class="card-title">重学前端笔记（1）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -565,7 +503,7 @@ o<span class="token punctuation">.</span><span class="token function">showThis</
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-11-04
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-10
                             </span>
                         <span class="publish-author">
                             
@@ -579,6 +517,7 @@ o<span class="token punctuation">.</span><span class="token function">showThis</
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -590,12 +529,8 @@ o<span class="token punctuation">.</span><span class="token function">showThis</
                         <span class="chip bg-color">JavaScript</span>
                     </a>
                     
-                    <a href="/tags/%E6%89%A7%E8%A1%8C%E6%97%B6/">
-                        <span class="chip bg-color">执行时</span>
-                    </a>
-                    
-                    <a href="/tags/%E5%BC%82%E6%AD%A5/">
-                        <span class="chip bg-color">异步</span>
+                    <a href="/tags/%E7%9F%A5%E8%AF%86%E6%9E%B6%E6%9E%84/">
+                        <span class="chip bg-color">知识架构</span>
                     </a>
                     
                 </div>
